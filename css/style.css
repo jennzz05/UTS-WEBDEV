@@ -207,12 +207,20 @@ h4 {
 
 .foto {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* 4 potrait berdiri sejajar */
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    justify-content: center;
-    margin: 60px auto;
-    width: 85%;
+    margin: 60px 0;
+    width: 50%;
+}
+
+.empatfoto {
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 100px 0;
+  padding: 0 50px;
+  gap:40px;
 }
 
 .foto-card {
@@ -392,7 +400,7 @@ h4 {
 
 
 .teks-kanan {
-    max-width: 500px;
+    width: 45%;
 }
 
 .teks-kanan h3 {
