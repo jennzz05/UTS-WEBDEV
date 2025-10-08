@@ -79,6 +79,12 @@ h4 {
     color: #ff7b00;
 }
 
+.navbar-kanan a:hover {
+    color: #ff7b00;
+}
+
+
+
 /* ===== BAGIAN JUDUL ===== */
 .div-judul {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
@@ -214,13 +220,15 @@ h4 {
 }
 
 .empatfoto {
- display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 100px 0;
-  padding: 0 50px;
-  gap:40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1255px;
+    margin: 100px 0;
+    margin-left: 80px;
+    /* GESER KE KANAN */
+    padding: 0 50px;
+    gap: 60px;
 }
 
 .foto-card {
@@ -228,8 +236,8 @@ h4 {
     overflow: hidden;
     border-radius: 16px;
     width: 100%;
-    height: 450px;
-    /* tinggi besar biar potrait */
+    height: 380px;
+    /* DIKURANGI dari 450px */
     background: #000;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
@@ -401,6 +409,7 @@ h4 {
 
 .teks-kanan {
     width: 45%;
+    margin-left: 100px;
 }
 
 .teks-kanan h3 {
@@ -442,11 +451,12 @@ h4 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== KETIGA (PACIFIC PROVIDE PLACES) - VERSI PERSEGI ===== */
 .ketiga {
     padding: 80px 0;
-    background: #f8f9fa;
+    background-size: cover;
     text-align: center;
+    position: relative;
+    background-color: grey;
 }
 
 .ketiga h3 {
@@ -485,7 +495,8 @@ h4 {
     position: relative;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     /* BUAT PERSEGI: height sama dengan width */
-    aspect-ratio: 1 / 1; /* Ini yang bikin persegi */
+    aspect-ratio: 1 / 1;
+    /* Ini yang bikin persegi */
 }
 
 .place-card:hover {
@@ -495,7 +506,8 @@ h4 {
 
 .place-image {
     position: relative;
-    height: 100%; /* Isi seluruh card */
+    height: 100%;
+    /* Isi seluruh card */
     width: 100%;
     overflow: hidden;
 }
@@ -503,7 +515,8 @@ h4 {
 .place-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Penting biar gambar tidak terdistorsi */
+    object-fit: cover;
+    /* Penting biar gambar tidak terdistorsi */
     transition: transform 0.5s ease;
 }
 
@@ -553,23 +566,24 @@ h4 {
     .ketiga {
         padding: 60px 0;
     }
-    
+
     .ketiga h1 {
         font-size: 28px;
         margin-bottom: 30px;
     }
-    
+
     .places-grid {
         grid-template-columns: 1fr;
         gap: 20px;
-        max-width: 300px; /* Lebih kecil untuk mobile */
+        max-width: 300px;
+        /* Lebih kecil untuk mobile */
     }
-    
+
     .country-name {
         font-size: 12px;
         padding: 6px 12px;
     }
-    
+
     .tours-count {
         font-size: 11px;
         padding: 5px 10px;
