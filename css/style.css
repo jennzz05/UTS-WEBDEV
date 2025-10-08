@@ -83,8 +83,6 @@ h4 {
     color: #ff7b00;
 }
 
-
-
 /* ===== BAGIAN JUDUL ===== */
 .div-judul {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
@@ -99,6 +97,7 @@ h4 {
 .judul {
     margin-left: 100px;
     margin-top: 200px;
+    position: relative;
 }
 
 .judul h4 {
@@ -119,6 +118,56 @@ h4 {
     color: white;
     font-size: 22px;
     font-weight: 400;
+}
+
+.play-button-judul {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff7b00;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.play-button-judul:hover {
+    background-color: #e06d00;
+    transform: translateY(-50%) translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.judul-play-button::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 25px solid white;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    margin-left: 5px;
+    /* Sedikit ke kanan agar segitiga tepat di tengah */
+}
+
+.play-button-judul::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    margin-left: 3px;
 }
 
 /* Search Box nempel di bawah judul */
